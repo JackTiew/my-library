@@ -1,0 +1,60 @@
+@use 'sass:math';
+
+$size: 200px;
+$n: 6;
+$pDeg: math.div(360deg, $n);
+$r: math.div($size, 2);
+$R: math.div($r, math.sin(math.div($pDeg, 2)));
+$innerSize: $R * 2;
+
+.rotate-slideshow-container {
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    outline: 2px solid #000;
+    background-color: black;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.rotate-slideshow-inner {
+    width: $innerSize;
+    height: $innerSize;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: $r;
+    position: relative;
+    animation: moving 5s infinite;
+
+    img {
+        width: $size;
+        height: $size;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        margin-left: -$r;
+        margin-top: -$r;
+        transform-origin: center #{$R + $r};
+
+        @for $i from 1 through $n {
+            &:nth-child(#{$i}) {
+                transform: rotate($pDeg * ($i - 1));
+            }
+        }
+    }
+}
+
+$u: math.div(1, $n) * 100%;
+$stopPercent: 0.6 * $u;
+@keyframes moving {
+    @for $i from 1 through $n {
+        $p: $u * $i;
+        $deg: $pDeg * $i;
+        #{$p - $stopPercent},
+        #{$p} {
+            transform: rotate(-$deg);
+        }
+    }
+}
