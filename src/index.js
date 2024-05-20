@@ -13,6 +13,8 @@ import Home from './views/Home';
 import AnimationPlayPause from './views/Animation-PlayPause/Animation-PlayPause';
 import AnimationDelay from './views/Animation-Delay/Animation-Delay';
 import RotateSlideShow from './views/Rotate-SlideShow/Rotate-SlideShow';
+import NumberDelimeter from './views/Number-Delimeter/Number-Delimeter';
+import PermissionDevelopment from './views/Permission-Development/Permission-Development';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -26,6 +28,8 @@ root.render(
         <Route path="/css-animation-play-pause" element={<AnimationPlayPause />} />
         <Route path="/css-animation-delay" element={<AnimationDelay />} />
         <Route path="/rotate-slideshow" element={<RotateSlideShow />} />
+        <Route path="/number-delimeter" element={<NumberDelimeter />} />
+        <Route path="/permission-development" element={<PermissionDevelopment />} />
 
         <Route path='/*' element={<Navigate to='/home' replace />} />
       </Routes>

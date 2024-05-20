@@ -10,6 +10,8 @@ const Home = () => {
         { url: '/css-animation-play-pause', name: 'Control Animation State With CSS'},
         { url: '/css-animation-delay', name: 'Control Animation With Animation Delay'},
         { url: '/rotate-slideshow', name: 'Rotate Slide Show'},
+        { url: '/number-delimeter', name: 'Number Delimeter'},
+        { url: '/permission-development', name: 'Permission Development'},
     ];
 
     const onNavigate = (obj) => {
