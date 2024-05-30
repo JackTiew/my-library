@@ -1,0 +1,15 @@
+.css-text-overflow-single-line {
+    display: block;
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.css-text-overflow-multi-line {
+    display: -webkit-box;
+    width: 300px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}

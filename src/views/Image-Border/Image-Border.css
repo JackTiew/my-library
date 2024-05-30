@@ -1,0 +1,11 @@
+.image-border-bdr-img {
+    text-align: center;
+    padding: 5rem;
+    margin: 2rem auto;
+    width: 70%;
+    border: 50px solid #000000;
+    border-image: url('../../../public/image-border.svg') 85 130 round;
+    /* border-image-source: url('../../../public/image-border.svg');
+    border-image-slice: 85 130;
+    border-image-repeat: round; */
+}

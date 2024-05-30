@@ -12,6 +12,11 @@ const Home = () => {
         { url: '/rotate-slideshow', name: 'Rotate Slide Show'},
         { url: '/number-delimeter', name: 'Number Delimeter'},
         { url: '/permission-development', name: 'Permission Development'},
+        { url: '/lazy-loading-image', name: 'Lazy Loading Image'},
+        { url: '/image-border', name: 'Image Border'},
+        { url: '/drag-n-drop', name: 'Drag N Drop'},
+        { url: '/sass-color-button', name: 'SASS Color Button'},
+        { url: '/css-text-overflow', name: 'Control Text Overflow With CSS'},
     ];
 
     const onNavigate = (obj) => {

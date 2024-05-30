@@ -1,0 +1,8 @@
+.drag-n-drop-page {
+    height: 50dvh;
+    border: 5px dotted #000000;
+}
+
+.drag-n-drop-item-container {
+    margin: 10px;
+}

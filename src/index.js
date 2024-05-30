@@ -15,6 +15,11 @@ import AnimationDelay from './views/Animation-Delay/Animation-Delay';
 import RotateSlideShow from './views/Rotate-SlideShow/Rotate-SlideShow';
 import NumberDelimeter from './views/Number-Delimeter/Number-Delimeter';
 import PermissionDevelopment from './views/Permission-Development/Permission-Development';
+import LazyLoadingImage from './views/Lazy-Loading-Image/Lazy-Loading-Image';
+import ImageBorder from './views/Image-Border/Image-Border';
+import DragNDrop from './views/Drag-n-Drop/DragNDrop';
+import SASSColorButton from './views/SASS-Color-Button/SASS-Color-Button';
+import CSSTextOverflow from './views/CSS-Text-Overflow/CSS-Text-Overflow';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -30,6 +35,11 @@ root.render(
         <Route path="/rotate-slideshow" element={<RotateSlideShow />} />
         <Route path="/number-delimeter" element={<NumberDelimeter />} />
         <Route path="/permission-development" element={<PermissionDevelopment />} />
+        <Route path="/lazy-loading-image" element={<LazyLoadingImage />} />
+        <Route path="/image-border" element={<ImageBorder />} />
+        <Route path="/drag-n-drop" element={<DragNDrop />} />
+        <Route path="/sass-color-button" element={<SASSColorButton />} />
+        <Route path="/css-text-overflow" element={<CSSTextOverflow />} />
 
         <Route path='/*' element={<Navigate to='/home' replace />} />
       </Routes>
