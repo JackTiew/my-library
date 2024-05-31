@@ -18,7 +18,7 @@ const DragNDrop = () => {
         { content: `<div>Div Sample</div>` },
         { content: `<input value='Input Sample' readOnly />` },
         { content: `<button>Button Sample</button>` },
-        { content: `<img width=50 height=50 src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA5r0_FrSjm2OgttQLwh_CnVCnzbJ7dLv6oA&s' alt='' />` },
+        { content: `<img style="width: 50px; height: 50px;" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA5r0_FrSjm2OgttQLwh_CnVCnzbJ7dLv6oA&s' alt='' />` },
     ];
 
     const [ boxes, setBoxes ] = useState([]);
@@ -43,14 +43,14 @@ const DragNDrop = () => {
             <button style={{ margin: 10 }} onClick={() => addBox()}>Add box</button>
             <div style={{ display: 'flex' }}>
                 {/* {
-                    presetComponent.map((component, index) => (
+                    presetComponent.map((comp, index) => (
                         <Drag
                             key={`${index}`}
                             containerClass={`item-container`}
                             onDragStartHandler={(event, component) => handleDragStart(event, component)}
                             onMouseDownHandler={event => handleMouseDown(event, false)}
                         >
-                            <div dangerouslySetInnerHTML={{__html: component.content}}></div>
+                            <div dangerouslySetInnerHTML={{__html: comp.content}}></div>
                         </Drag>
                     ))
                 } */}
@@ -68,7 +68,10 @@ const DragNDrop = () => {
                 }
             </div>
             <DropZone
-                containerClass={`drag-n-drop-page`}
+                containerStyle={{
+                    height: '50dvh',
+                    border: '5px dotted #000000'
+                }}
                 onDropHandler={onDrop}
                 onDragOverHandler={event => event.preventDefault()}
             >
@@ -78,8 +81,6 @@ const DragNDrop = () => {
                             id={`${item.id}`}
                             key={`${item.id}`}
                             containerStyle={{
-                                height: 50,
-                                width: 50,
                                 position: item.top && item.left ? 'absolute' : '',
                                 top: item.top || '',
                                 left: item.left || '',

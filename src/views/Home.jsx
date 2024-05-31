@@ -17,6 +17,8 @@ const Home = () => {
         { url: '/drag-n-drop', name: 'Drag N Drop'},
         { url: '/sass-color-button', name: 'SASS Color Button'},
         { url: '/css-text-overflow', name: 'Control Text Overflow With CSS'},
+        { url: '/js-css-variable', name: 'Control CSS With JS'},
+        { url: '/random-canvas-tree', name: 'Draw Random Tree with Canvas'},
     ];
 
     const onNavigate = (obj) => {
@@ -27,8 +29,8 @@ const Home = () => {
         <div style={{ display: 'flex', justifyContent: 'center', cursor: 'pointer' }}>
             <div style={{ display: 'flex', flexDirection: 'column', textAlign: 'center' }}>
                 {
-                    libraries.map(x => (
-                            <h1 onClick={() => onNavigate(x)}>{x.name}</h1>
+                    libraries.map((x, index) => (
+                            <h1 key={index} onClick={() => onNavigate(x)}>{x.name}</h1>
                             
                     ))
                 }

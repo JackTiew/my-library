@@ -1,11 +1,11 @@
 const DropZone = (props) => {
 
-    const { containerClass, children } = props;
+    const { containerStyle, children } = props;
     const { onDropHandler, onDragOverHandler } = props;
 
     return (
         <div
-            className={containerClass}
+            style={containerStyle}
             onDrop={onDropHandler}
             onDragOver={onDragOverHandler}
         >

@@ -20,6 +20,8 @@ import ImageBorder from './views/Image-Border/Image-Border';
 import DragNDrop from './views/Drag-n-Drop/DragNDrop';
 import SASSColorButton from './views/SASS-Color-Button/SASS-Color-Button';
 import CSSTextOverflow from './views/CSS-Text-Overflow/CSS-Text-Overflow';
+import JSCSSVariable from './views/JS-CSS-Variable/JS-CSS-Variable';
+import RandomCanvasTree from './views/Random-Canvas-Tree/Random-Canvas-Tree';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -40,6 +42,8 @@ root.render(
         <Route path="/drag-n-drop" element={<DragNDrop />} />
         <Route path="/sass-color-button" element={<SASSColorButton />} />
         <Route path="/css-text-overflow" element={<CSSTextOverflow />} />
+        <Route path="/js-css-variable" element={<JSCSSVariable />} />
+        <Route path="/random-canvas-tree" element={<RandomCanvasTree />} />
 
         <Route path='/*' element={<Navigate to='/home' replace />} />
       </Routes>

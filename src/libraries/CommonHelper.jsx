@@ -10,9 +10,20 @@ const CommonHelper = () => {
             : randomString(11) + randomString(length - 11);
     }
 
+    const getNumberOnlyFromString = (text) => {
+
+        if (typeof(text) !== 'string') {
+            return text;
+        }
+        else {
+            return +text.replace(/\D/g, "");
+        }
+    };
+
     return {
         randomColor,
         randomString,
+        getNumberOnlyFromString
     }
 }
 
