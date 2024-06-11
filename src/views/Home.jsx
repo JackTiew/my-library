@@ -19,6 +19,11 @@ const Home = () => {
         { url: '/css-text-overflow', name: 'Control Text Overflow With CSS'},
         { url: '/js-css-variable', name: 'Control CSS With JS'},
         { url: '/random-canvas-tree', name: 'Draw Random Tree with Canvas'},
+        { url: '/frame-animation', name: 'Running Animation in Frame'},
+        { url: '/gradient-background', name: 'Gradient Background'},
+        { url: '/plane-cursor', name: 'Plane Cursor'},
+        { url: '/crossover-text', name: 'Crossover Text'},
+        { url: '/css-reflection', name: 'CSS Reflection'},
     ];
 
     const onNavigate = (obj) => {

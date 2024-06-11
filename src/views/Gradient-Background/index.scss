@@ -1,0 +1,32 @@
+@property --direc {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.gradient-background-card {
+    --direc: 0deg;
+    margin-top: 15dvh;
+    height: 70dvh;
+    width: 25dvw;
+    color: red;
+    font-size: 24px;
+    background-image: linear-gradient(var(--direc), #5DDCFF, #3C67E3, 43%, #4E00C2);
+    animation: rotate 3s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gradient-background-center-card {
+    width: 95%;
+    height: 95%;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+@keyframes rotate {
+    to {
+        --direc: 360deg;
+    }
+}

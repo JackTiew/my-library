@@ -1,0 +1,11 @@
+.crossover-text-overlap {
+  font-size: 180px;
+  letter-spacing: -30px;
+  color: #FFFFFF;
+}
+
+.crossover-text-overlap span {
+  text-shadow: 10px 0 10px #000000;
+  text-transform: uppercase;
+  position: relative;
+}

@@ -22,6 +22,11 @@ import SASSColorButton from './views/SASS-Color-Button/SASS-Color-Button';
 import CSSTextOverflow from './views/CSS-Text-Overflow/CSS-Text-Overflow';
 import JSCSSVariable from './views/JS-CSS-Variable/JS-CSS-Variable';
 import RandomCanvasTree from './views/Random-Canvas-Tree/Random-Canvas-Tree';
+import FrameAnimation from './views/Frame-Animation/Frame-Animation';
+import GradientBackground from './views/Gradient-Background/Gradient-Background';
+import PlaneCursor from './views/Plane-Cursor/Plane-Cursor';
+import CrossoverText from './views/Crossover-text/Crossover-text';
+import CSSReflection from './views/CSS-Reflection/CSS-Reflection';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -44,6 +49,11 @@ root.render(
         <Route path="/css-text-overflow" element={<CSSTextOverflow />} />
         <Route path="/js-css-variable" element={<JSCSSVariable />} />
         <Route path="/random-canvas-tree" element={<RandomCanvasTree />} />
+        <Route path="/frame-animation" element={<FrameAnimation />} />
+        <Route path="/gradient-background" element={<GradientBackground />} />
+        <Route path="/plane-cursor" element={<PlaneCursor />} />
+        <Route path="/crossover-text" element={<CrossoverText />} />
+        <Route path="/css-reflection" element={<CSSReflection />} />
 
         <Route path='/*' element={<Navigate to='/home' replace />} />
       </Routes>

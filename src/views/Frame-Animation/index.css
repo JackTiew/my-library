@@ -1,0 +1,28 @@
+.frame-animation-ball {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #FC5E56;
+  animation: moving 2s infinite steps(3, jump-none);
+}
+
+@keyframes moving {
+  to {
+    transform: translateX(calc(100dvw - 100%));
+  }
+}
+.frame-animation-horse {
+  width: 150px;
+  height: 150px;
+  background: url("./horse.png") no-repeat;
+  animation: run 1s steps(12) infinite;
+}
+
+@keyframes run {
+  0% {
+    background-position-x: -2400px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
