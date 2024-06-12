@@ -24,6 +24,8 @@ const Home = () => {
         { url: '/plane-cursor', name: 'Plane Cursor'},
         { url: '/crossover-text', name: 'Crossover Text'},
         { url: '/css-reflection', name: 'CSS Reflection'},
+        { url: '/debounce', name: 'Debounce Funtion'},
+        { url: '/card-flip', name: 'Card Flip Effect'},
     ];
 
     const onNavigate = (obj) => {

@@ -1,0 +1,94 @@
+.btn-type-1 {
+  background: #409EFF;
+  color: #FFF;
+  border: none;
+  outline: none;
+  margin: 20px;
+  padding: 20px;
+}
+.btn-type-1:hover {
+  background: #73b8ff;
+}
+.btn-type-1:active {
+  background: #0d84ff;
+}
+.btn-type-1:disabled {
+  background: #a6d2ff;
+  color: #FFF;
+}
+
+.btn-type-2 {
+  background: #FB7806;
+  color: #FFF;
+  border: none;
+  outline: none;
+  margin: 20px;
+  padding: 20px;
+}
+.btn-type-2:hover {
+  background: #fc9338;
+}
+.btn-type-2:active {
+  background: #cb6003;
+}
+.btn-type-2:disabled {
+  background: #fdae6a;
+  color: #FFF;
+}
+
+.btn-type-3 {
+  background: #8B590F;
+  color: #FFF;
+  border: none;
+  outline: none;
+  margin: 20px;
+  padding: 20px;
+}
+.btn-type-3:hover {
+  background: #b97614;
+}
+.btn-type-3:active {
+  background: #5d3c0a;
+}
+.btn-type-3:disabled {
+  background: #e6941a;
+  color: #FFF;
+}
+
+.btn-type-4 {
+  background: #F54343;
+  color: #FFF;
+  border: none;
+  outline: none;
+  margin: 20px;
+  padding: 20px;
+}
+.btn-type-4:hover {
+  background: #f87373;
+}
+.btn-type-4:active {
+  background: #f21313;
+}
+.btn-type-4:disabled {
+  background: #faa4a4;
+  color: #FFF;
+}
+
+.btn-type-5 {
+  background: #6C6D71;
+  color: #FFF;
+  border: none;
+  outline: none;
+  margin: 20px;
+  padding: 20px;
+}
+.btn-type-5:hover {
+  background: #85868b;
+}
+.btn-type-5:active {
+  background: #535457;
+}
+.btn-type-5:disabled {
+  background: #9fa0a4;
+  color: #FFF;
+}

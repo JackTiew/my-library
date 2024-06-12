@@ -27,6 +27,8 @@ import GradientBackground from './views/Gradient-Background/Gradient-Background'
 import PlaneCursor from './views/Plane-Cursor/Plane-Cursor';
 import CrossoverText from './views/Crossover-text/Crossover-text';
 import CSSReflection from './views/CSS-Reflection/CSS-Reflection';
+import Debounce from './views/Debounce/Debounce';
+import CardFlip from './views/Card-Flip/Card-Flip';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -54,6 +56,8 @@ root.render(
         <Route path="/plane-cursor" element={<PlaneCursor />} />
         <Route path="/crossover-text" element={<CrossoverText />} />
         <Route path="/css-reflection" element={<CSSReflection />} />
+        <Route path="/debounce" element={<Debounce />} />
+        <Route path="/card-flip" element={<CardFlip />} />
 
         <Route path='/*' element={<Navigate to='/home' replace />} />
       </Routes>

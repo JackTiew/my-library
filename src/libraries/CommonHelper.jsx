@@ -20,10 +20,20 @@ const CommonHelper = () => {
         }
     };
 
+    let timerId;
+    const debounce = (callback, delay = 1000) => {
+        clearTimeout(timerId);
+
+        timerId = setTimeout(() => {
+            callback();
+        }, delay);
+    };
+
     return {
         randomColor,
         randomString,
-        getNumberOnlyFromString
+        getNumberOnlyFromString,
+        debounce
     }
 }
 
