@@ -29,11 +29,16 @@ const CommonHelper = () => {
         }, delay);
     };
 
+    const delay = (ms) => {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
     return {
         randomColor,
         randomString,
         getNumberOnlyFromString,
-        debounce
+        debounce,
+        delay,
     }
 }
 

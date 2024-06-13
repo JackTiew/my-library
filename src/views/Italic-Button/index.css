@@ -1,0 +1,38 @@
+.italic-button-container {
+  font-size: 25px;
+  border-radius: 15px 0;
+  position: relative;
+  outline: none;
+  border: 0;
+  height: 50px;
+  width: 200px;
+  background-color: #409EFF;
+  transform: skew(-15deg);
+}
+
+.italic-button-container span {
+  transform: skew(15deg);
+  display: block;
+}
+
+.italic-button-container::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #409EFF;
+  bottom: 0;
+  left: -19px;
+  background: radial-gradient(circle at 0 0, transparent 20px, #409EFF 21px);
+}
+
+.italic-button-container::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #409EFF;
+  top: 0;
+  right: -19px;
+  background: radial-gradient(circle at 100% 100%, transparent 20px, #409EFF 21px);
+}
