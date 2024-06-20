@@ -9,6 +9,7 @@ import Debounce from "./views/Debounce/Debounce";
 import DragNDrop from "./views/Drag-n-Drop/DragNDrop";
 import Flip from "./views/FLIP/Flip";
 import FrameAnimation from "./views/Frame-Animation/Frame-Animation";
+import FullWidthHeightImage from "./views/Full-WidthHeight-Image/Full-WidthHeight-Image";
 import GradientBackground from "./views/Gradient-Background/Gradient-Background";
 import HighlightSearch from "./views/Highlight-Search/Highlight-Search";
 import ImageBorder from "./views/Image-Border/Image-Border";
@@ -54,6 +55,8 @@ const Routes = [
   { url: '/italic-button', element: ItalicButton, name: 'Italic Button'},
   { url: '/highlight-search', element: HighlightSearch, name: 'Highlight Search'},
   { url: '/flip', element: Flip, name: 'FLIP'},
+  { url: '/ful-width-height-image', element: FullWidthHeightImage, name: 'Image with full width or height when screen size change'},
+  
 ]
 
 export default Routes;

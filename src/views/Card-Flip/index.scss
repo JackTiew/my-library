@@ -64,3 +64,33 @@
     top: 50%;
     line-height: 0;
 }
+
+
+/////////
+.card-flip-container {
+    margin-left: 100px;
+    position: relative;
+    perspective: 500px;
+}
+
+.card-flip-front, .card-flip-back {
+    background-color: #FFFFFF;
+    color: black;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    transition: 0.5s;
+    backface-visibility: hidden;
+}
+
+.card-flip-container:hover .card-flip-front {
+    transform: rotateY(-180deg);
+}
+
+.card-flip-container .card-flip-back {
+    transform: rotateY(-180deg);
+}
+
+.card-flip-container:hover .card-flip-back {
+    transform: rotateY(0deg);
+}

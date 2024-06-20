@@ -9,6 +9,14 @@ const CardFlip = () => {
                 <div className='card card3'>4</div>
                 <div className='card card4'>4</div>
             </div>
+            <div className='card-flip-container'>
+                <p className='card-flip-front'>
+                    I am front
+                </p>
+                <p className='card-flip-back'>
+                    I am back
+                </p>
+            </div>
         </div>
     )
 }

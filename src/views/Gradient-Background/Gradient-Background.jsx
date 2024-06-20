@@ -7,6 +7,9 @@ const GradientBackground = () => {
                 <div className='gradient-background-card'>
                     <div className='gradient-background-center-card'></div>
                 </div>
+                <div className='gradient-background-button-container'>
+                    <button className='gradient-background-border-button'>Border Button</button>
+                </div>
             </div>
         </div>
     )
