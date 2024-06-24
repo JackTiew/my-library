@@ -1,0 +1,106 @@
+$btnColors: #409EFF, #FB7806, #8B590F, #F54343, #6C6D71;
+$size: 300px;
+$imgSize: 80px;
+.circle-image-container {
+    width: $size;
+    height: $size;
+    outline: 1px solid #FFFFFF;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border-radius: 50%;
+    animation: rotate linear infinite 20s;
+    .circle-image-item {
+        width: $imgSize;
+        height: $imgSize;
+        position: absolute;
+        margin-top: -40px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+$pDeg: 360deg / length($btnColors);
+.circle-image-item {
+    transform-origin: center $size / 2 + $imgSize / 2;
+    @for $i from 1 through length($btnColors) {
+        &:nth-child(#{$i}) {
+            $deg: $pDeg * ($i - 1);
+            transform: rotate($deg);
+            // background-color: nth($btnColors, $i);
+            img {
+                --initDeg: #{$deg};
+                transform: rotate(-$deg);
+                animation: circle-image-rotation 20s linear infinite reverse;
+            }
+        }
+    }
+}
+
+.circle-image-container {
+    animation: circle-image-rotation 20s linear infinite;
+}
+
+@keyframes circle-image-rotation {
+    to{
+        transform: rotate(calc(360deg - var(--initDeg, 0deg)));
+    }
+}
+
+// $size: 300px;
+// $imgSize: 80px;
+// .circle-image-container {
+//     width: $size;
+//     height: $size;
+//     outline: 1px solid #000000;
+//     margin: 0 auto;
+//     position: relative;
+//     margin-top: 60px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: start;
+//     border-radius: 50%;
+//     .circle-image-item {
+//         width: $imgSize;
+//         height: $imgSize;
+//         position: absolute;
+//         margin-top: -40px;
+//         img {
+//             width: 100%;
+//             height: 100%;
+//         }
+//     }
+// }
+
+// $n: 5;
+// $pDeg: 360deg / $n;
+// .circle-image-item {
+//     transform-origin: center $size / 2 + $imgSize / 2;
+//     @for $i from 1 through $n {
+//         &:nth-child(#{$i}) {
+//             $deg: $pDeg * ($i - 1);
+//             transform: rotate($deg);
+//             img {
+//                 --initDeg: #{$deg};
+//                 transform: rotate(-$deg);
+//                 animation: circle-image-rotation 20s linear infinite reverse;
+//             }
+//         }
+//     }
+// }
+
+// .circle-image-container {
+//     animation: circle-image-rotation 20s linear infinite;
+// }
+
+// @keyframes circle-image-rotation {
+//     to{
+//         // transform: rotate(calc(180deg - var(--initDeg, 0deg)));
+//         transform: rotate(90deg);
+//     }
+// }

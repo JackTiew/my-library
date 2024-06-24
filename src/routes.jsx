@@ -4,10 +4,13 @@ import AspectRatio from "./views/Aspect-Ratio/Aspect-Ratio";
 import CSSReflection from "./views/CSS-Reflection/CSS-Reflection";
 import CSSTextOverflow from "./views/CSS-Text-Overflow/CSS-Text-Overflow";
 import CardFlip from "./views/Card-Flip/Card-Flip";
+import CardTilt from "./views/Card-Tilt/Card-Tilt";
+import CircleImage from "./views/Circle-Image/Circle-Image";
 import CrossoverText from "./views/Crossover-text/Crossover-text";
 import Debounce from "./views/Debounce/Debounce";
 import DragNDrop from "./views/Drag-n-Drop/DragNDrop";
 import Flip from "./views/FLIP/Flip";
+import FireText from "./views/Fire-Text/Fire-Text";
 import FrameAnimation from "./views/Frame-Animation/Frame-Animation";
 import FullWidthHeightImage from "./views/Full-WidthHeight-Image/Full-WidthHeight-Image";
 import GradientBackground from "./views/Gradient-Background/Gradient-Background";
@@ -16,6 +19,7 @@ import ImageBorder from "./views/Image-Border/Image-Border";
 import ItalicButton from "./views/Italic-Button/Italic-Button";
 import JSCSSVariable from "./views/JS-CSS-Variable/JS-CSS-Variable";
 import LazyLoadingImage from "./views/Lazy-Loading-Image/Lazy-Loading-Image";
+import MovingBall from "./views/Moving-Ball/Moving-Ball";
 import NumberDelimeter from "./views/Number-Delimeter/Number-Delimeter";
 import Parabola from "./views/Parabola/Parabola";
 import PermissionDevelopment from "./views/Permission-Development/Permission-Development";
@@ -24,6 +28,7 @@ import RandomCanvasTree from "./views/Random-Canvas-Tree/Random-Canvas-Tree";
 import Recording from "./views/Recording/Recording";
 import ReduxSample from "./views/Redux/ReduxSample";
 import RotateSlideShow from "./views/Rotate-SlideShow/Rotate-SlideShow";
+import RoundImageWithText from "./views/Round-Image-With-Text/Round-Image-With-Text";
 import SASSColorButton from "./views/SASS-Color-Button/SASS-Color-Button";
 import StrokeAnimation from "./views/Stroke-Animation/Stroke-Animation";
 
@@ -55,7 +60,12 @@ const Routes = [
   { url: '/italic-button', element: ItalicButton, name: 'Italic Button'},
   { url: '/highlight-search', element: HighlightSearch, name: 'Highlight Search'},
   { url: '/flip', element: Flip, name: 'FLIP'},
-  { url: '/ful-width-height-image', element: FullWidthHeightImage, name: 'Image with full width or height when screen size change'},
+  { url: '/full-width-height-image', element: FullWidthHeightImage, name: 'Image with full width or height when screen size change'},
+  { url: '/round-image-with-text', element: RoundImageWithText, name: 'Round Image With Text'},
+  { url: '/circle-image', element: CircleImage, name: 'Image Rotation'},
+  { url: '/fire-text', element: FireText, name: 'Text with Fire Effect'},
+  { url: '/card-tilt', element: CardTilt, name: 'Card Tilt Effect'},
+  { url: '/moving-ball', element: MovingBall, name: 'Moving Ball on Mouseclick(WEB Animation)'},
   
 ]
 

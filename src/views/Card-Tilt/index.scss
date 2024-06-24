@@ -1,0 +1,20 @@
+.card-tilt-container {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-tilt-card {
+    height: 70dvh;
+    width: 25dvw;
+    background-color: green;
+    border-radius: 10px;
+    transition: 0.3s;
+    transform: perspective(500px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+}
+
+.card-tilt-card:hover {
+    box-shadow: -3px -3px 10px #54A29E, 3px 3px 10px #A79D66;
+}
