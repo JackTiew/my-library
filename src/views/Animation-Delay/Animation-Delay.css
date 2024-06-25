@@ -12,14 +12,52 @@
     border-radius: 50%;
     background-color: red;
     margin-bottom: 50px;
-    animation: move 1s linear var(--delay) forwards paused;
+    animation: animation-delay-move 1s linear var(--delay) forwards paused;
 }
 
-@keyframes move {
+@keyframes animation-delay-move {
     50% {
         transform: translateX(calc(50dvw - 100%)) scale(3);
     }
     to {
         transform: translateX(calc(100dvw - 100%)) scale(1);
+    }
+}
+
+.animation-delay-meter-container {
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    height: 100px;
+    width: 100px;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    outline: 5px solid #FFFFFF;
+}
+
+.animation-delay-meter-container span{
+    z-index: 2;
+}
+
+.animation-delay-meter-container::after {
+    content: '';
+    height: 200px;
+    width: 200px;
+    background-color: #9AE6F9;
+    position: absolute;
+    top: calc(100px - var(--meter-height));
+    border-radius: 35%;
+    animation: animation-delay-meter-rotate 3s linear infinite;
+    z-index: 1;
+}
+
+@keyframes animation-delay-meter-rotate {
+    to {
+        transform: rotate(360deg);
     }
 }

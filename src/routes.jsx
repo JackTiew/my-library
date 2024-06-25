@@ -1,6 +1,7 @@
 import AnimationDelay from "./views/Animation-Delay/Animation-Delay";
 import AnimationPlayPause from "./views/Animation-PlayPause/Animation-PlayPause";
 import AspectRatio from "./views/Aspect-Ratio/Aspect-Ratio";
+import BlackWhiteBallLoading from "./views/BlackWhite-Ball-Loading/BlackWhite-Ball-Loading";
 import CSSReflection from "./views/CSS-Reflection/CSS-Reflection";
 import CSSTextOverflow from "./views/CSS-Text-Overflow/CSS-Text-Overflow";
 import CardFlip from "./views/Card-Flip/Card-Flip";
@@ -13,6 +14,7 @@ import Flip from "./views/FLIP/Flip";
 import FireText from "./views/Fire-Text/Fire-Text";
 import FrameAnimation from "./views/Frame-Animation/Frame-Animation";
 import FullWidthHeightImage from "./views/Full-WidthHeight-Image/Full-WidthHeight-Image";
+import GSAP from "./views/GSAP/GSAP";
 import GradientBackground from "./views/Gradient-Background/Gradient-Background";
 import HighlightSearch from "./views/Highlight-Search/Highlight-Search";
 import ImageBorder from "./views/Image-Border/Image-Border";
@@ -24,6 +26,7 @@ import NumberDelimeter from "./views/Number-Delimeter/Number-Delimeter";
 import Parabola from "./views/Parabola/Parabola";
 import PermissionDevelopment from "./views/Permission-Development/Permission-Development";
 import PlaneCursor from "./views/Plane-Cursor/Plane-Cursor";
+import RainCode from "./views/Rain-Code/Rain-Code";
 import RandomCanvasTree from "./views/Random-Canvas-Tree/Random-Canvas-Tree";
 import Recording from "./views/Recording/Recording";
 import ReduxSample from "./views/Redux/ReduxSample";
@@ -36,7 +39,7 @@ const Routes = [
   { url: '/redux-sample', element: ReduxSample, name: 'Redux'},
   { url: '/parabola', element: Parabola, name: 'Parabola Animation'},
   { url: '/css-animation-play-pause', element: AnimationPlayPause, name: 'Control Animation State With CSS'},
-  { url: '/css-animation-delay', element: AnimationDelay, name: 'Control Animation With Animation Delay'},
+  { url: '/css-animation-delay', element: AnimationDelay, name: 'Control Animation With Input Range'},
   { url: '/rotate-slideshow', element: RotateSlideShow, name: 'Rotate Slide Show'},
   { url: '/number-delimeter', element: NumberDelimeter, name: 'Number Delimeter'},
   { url: '/permission-development', element: PermissionDevelopment, name: 'Permission Development'},
@@ -66,7 +69,9 @@ const Routes = [
   { url: '/fire-text', element: FireText, name: 'Text with Fire Effect'},
   { url: '/card-tilt', element: CardTilt, name: 'Card Tilt Effect'},
   { url: '/moving-ball', element: MovingBall, name: 'Moving Ball on Mouseclick(WEB Animation)'},
-  
+  { url: '/gsap', element: GSAP, name: 'GSAP'},
+  { url: '/black-white-ball-loading', element: BlackWhiteBallLoading, name: 'Black White Ball Loading'},
+  { url: '/rain-code', element: RainCode, name: 'Rain Code'},
 ]
 
 export default Routes;
