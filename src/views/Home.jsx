@@ -5,8 +5,8 @@ const Home = () => {
     const navigate = useNavigate();
 
     return (
-        <div style={{ display: 'flex', justifyContent: 'center', cursor: 'pointer' }}>
-            <div style={{ display: 'flex', flexDirection: 'column', textAlign: 'center' }}>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', textAlign: 'center', cursor: 'pointer' }}>
                 {
                     routes.map((route, index) => (
                         <h1 key={index} onClick={() => navigate(route.url)}>{route.name}</h1>

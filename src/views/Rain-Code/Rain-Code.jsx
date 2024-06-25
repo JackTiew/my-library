@@ -30,8 +30,8 @@ const RainCode = () => {
 
         const cvs = canvasRef.current;
 
-        const width = window.innerWidth * devicePixelRatio;
-        const height = window.innerHeight * devicePixelRatio;
+        const width = window.innerWidth;
+        const height = window.innerHeight - 5;
 
         cvs.width = width;
         cvs.height = height;
