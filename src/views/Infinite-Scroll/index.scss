@@ -1,0 +1,39 @@
+.infiniteScroll-prev, .infiniteScroll-next {
+    height: 0px;
+    overflow: hidden;
+}
+
+.infiniteScroll-cur {
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.infiniteScroll-item img {
+    width: 100%;
+    height: 99%;
+}
+
+.infiniteScroll-scrollUp .infiniteScroll-prev {
+    animation: infiniteScroll-scrollDown 0.2s linear forwards;
+}
+
+.infiniteScroll-scrollDown .infiniteScroll-next {
+    animation: infiniteScroll-scrollDown 0.2s linear forwards;
+}
+
+.infiniteScroll-scrollUp .infiniteScroll-cur,
+.infiniteScroll-scrollDown .infiniteScroll-cur {
+    animation: infiniteScroll-hide 0.2s linear forwards;
+}
+
+@keyframes infiniteScroll-scrollDown {
+    to {
+        height: 100dvh;
+    }
+}
+
+@keyframes infiniteScroll-hide {
+    to {
+        height: 0;
+    }
+}

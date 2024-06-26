@@ -1,0 +1,31 @@
+.circle-hover-avatar {
+    background-image: url('./sample.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.circle-hover-avatar::before, .circle-hover-avatar::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+}
+
+.circle-hover-avatar::before {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.circle-hover-avatar::after{
+    background: inherit;
+    clip-path: circle(0% at 50% 50%);
+    transition: 0.3s;
+}
+
+.circle-hover-avatar:hover::after {
+    clip-path: circle(50% at 50% 50%);
+}

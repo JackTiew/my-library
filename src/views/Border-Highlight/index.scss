@@ -1,0 +1,36 @@
+.border-highlight-container {
+    display: grid;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 1em;
+    color: #F0F0F0;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.border-highlight-card {
+    aspect-ratio: 4/3;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.border-highlight-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(closest-side circle, #FFFFFF, transparent);
+    transform: translate(var(--x, -1000px), var(--y, -1000px));
+}
+
+.border-highlight-content {
+    position: absolute;
+    inset: 4px;
+    background: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: inherit;
+}

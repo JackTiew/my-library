@@ -1,11 +1,15 @@
 import AnimationDelay from "./views/Animation-Delay/Animation-Delay";
 import AnimationPlayPause from "./views/Animation-PlayPause/Animation-PlayPause";
 import AspectRatio from "./views/Aspect-Ratio/Aspect-Ratio";
+import AutoFollowImageBorder from "./views/AutoFollow-ImageBorder/AutoFollow-ImageBorder";
 import BlackWhiteBallLoading from "./views/BlackWhite-Ball-Loading/BlackWhite-Ball-Loading";
+import BorderHighlight from "./views/Border-Highlight/Border-Highlist";
+import BrokenEffect from "./views/Broken-Effect/Broken-Effect";
 import CSSReflection from "./views/CSS-Reflection/CSS-Reflection";
 import CSSTextOverflow from "./views/CSS-Text-Overflow/CSS-Text-Overflow";
 import CardFlip from "./views/Card-Flip/Card-Flip";
 import CardTilt from "./views/Card-Tilt/Card-Tilt";
+import CircleHover from "./views/Circle-Hover/Circle-Hover";
 import CircleImage from "./views/Circle-Image/Circle-Image";
 import CrossoverText from "./views/Crossover-text/Crossover-text";
 import Debounce from "./views/Debounce/Debounce";
@@ -18,6 +22,7 @@ import GSAP from "./views/GSAP/GSAP";
 import GradientBackground from "./views/Gradient-Background/Gradient-Background";
 import HighlightSearch from "./views/Highlight-Search/Highlight-Search";
 import ImageBorder from "./views/Image-Border/Image-Border";
+import InfiniteScroll from "./views/Infinite-Scroll/Infinite-Scroll";
 import ItalicButton from "./views/Italic-Button/Italic-Button";
 import JSCSSVariable from "./views/JS-CSS-Variable/JS-CSS-Variable";
 import LazyLoadingImage from "./views/Lazy-Loading-Image/Lazy-Loading-Image";
@@ -72,6 +77,11 @@ const Routes = [
   { url: '/gsap', element: GSAP, name: 'GSAP'},
   { url: '/black-white-ball-loading', element: BlackWhiteBallLoading, name: 'Black White Ball Loading'},
   { url: '/rain-code', element: RainCode, name: 'Rain Code'},
+  { url: '/circle-hover', element: CircleHover, name: 'Circle Hover Effect'},
+  { url: '/broken-effect', element: BrokenEffect, name: 'Image Broken Effect'},
+  { url: '/border-highlight', element: BorderHighlight, name: 'Border Highlight Effect'},
+  { url: '/auto-follow-image-border', element: AutoFollowImageBorder, name: 'Auto Follow Image Border'},
+  { url: '/infinite-scroll', element: InfiniteScroll, name: 'Infinite Scroll'},
 ]
 
 export default Routes;

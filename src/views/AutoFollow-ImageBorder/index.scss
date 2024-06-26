@@ -1,0 +1,37 @@
+.autoFollowImageBorder-container {
+    display: grid;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 1em;
+    color: #F0F0F0;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.autoFollowImageBorder-item {
+
+}
+
+.autoFollowImageBorder-pointer {
+    display: none;
+    --l: 30px; //line-length
+    --t: 3px; //line-thickness
+    --g: 15px; //line-gap
+    --s: 225px; //image-size
+    --x: 0px;
+    --y: 0px;
+    position: absolute;
+    width: calc(var(--s) + var(--g) * 2);
+    height: calc(var(--s) + var(--g) * 2);
+    border: var(--t) solid red;
+    left: calc(var(--x) - var(--g));
+    top: calc(var(--y) - var(--g));
+    transition: 0.2s;
+    mask: conic-gradient(
+        at var(--l) var(--l), 
+        transparent 75%,
+        red 75% 100%
+    ) 0 0 / calc(100% - var(--l)) calc(100% - var(--l)) repeat;
+}
