@@ -1,0 +1,42 @@
+.bubbleAnimation-footer {
+    width: 100dvw;
+    height: 300px;
+    bottom: 0;
+    position: fixed;
+    background: #ED5565;
+}
+
+.bubbleAnimation-bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1em;
+    filter: url(#blob);
+    background: inherit;
+}
+
+.bubbleAnimation-bubble {
+    position: absolute;
+    --x: 100px;
+    --s: 50px;
+    --d: 2s;
+    border-radius: 50%;
+    background: #ED5565;
+    height: var(--s);
+    width: var(--s);
+    margin-left: var(--x);
+    animation: bubbleAnimation-move var(--d) linear forwards;
+}
+
+@keyframes bubbleAnimation-move {
+    90% {
+        height: var(--s);
+        width: var(--s);
+    }
+    to {
+        height: 0;
+        width: 0;
+        transform: translateY(-300px);
+    }
+}

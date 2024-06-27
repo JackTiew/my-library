@@ -1,0 +1,45 @@
+.photoWall-ring {
+  width: 100dvw;
+  height: 100dvh;
+  transform-style: preserve-3d;
+}
+.photoWall-ring img {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top: -250px;
+  backface-visibility: hidden;
+}
+.photoWall-ring img:nth-child(1) {
+  transform: translate3d(0px, 0, 700px) rotateY(180deg);
+}
+.photoWall-ring img:nth-child(2) {
+  transform: translate3d(411.4496766047px, 0, 566.3118960625px) rotateY(216deg);
+}
+.photoWall-ring img:nth-child(3) {
+  transform: translate3d(665.7395614066px, 0, 216.3118960625px) rotateY(252deg);
+}
+.photoWall-ring img:nth-child(4) {
+  transform: translate3d(665.7395614066px, 0, -216.3118960625px) rotateY(288deg);
+}
+.photoWall-ring img:nth-child(5) {
+  transform: translate3d(411.4496766047px, 0, -566.3118960625px) rotateY(324deg);
+}
+.photoWall-ring img:nth-child(6) {
+  transform: translate3d(0px, 0, -700px) rotateY(360deg);
+}
+.photoWall-ring img:nth-child(7) {
+  transform: translate3d(-411.4496766047px, 0, -566.3118960625px) rotateY(396deg);
+}
+.photoWall-ring img:nth-child(8) {
+  transform: translate3d(-665.7395614066px, 0, -216.3118960625px) rotateY(432deg);
+}
+.photoWall-ring img:nth-child(9) {
+  transform: translate3d(-665.7395614066px, 0, 216.3118960625px) rotateY(468deg);
+}
+.photoWall-ring img:nth-child(10) {
+  transform: translate3d(-411.4496766047px, 0, 566.3118960625px) rotateY(504deg);
+}

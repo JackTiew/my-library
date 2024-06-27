@@ -1,0 +1,31 @@
+@use 'sass:math';
+
+.photoWall-ring {
+    width: 100dvw;
+    height: 100dvh;
+    transform-style: preserve-3d;
+    
+    img {
+        position: absolute;
+        $imgWidth: 400px;
+        $imgHeight: 500px;
+        width: $imgWidth;
+        height: $imgHeight;
+        left: 50%;
+        top: 50%;
+        margin-left: -$imgWidth / 2;
+        margin-top: -$imgHeight / 2;
+        $r: 700px;
+        $n: 10;
+        $pDeg: 360deg / $n;
+        backface-visibility: hidden;
+        @for $i from 0 through $n - 1 {
+            &:nth-child(#{$i + 1}) {
+                $deg: $i * $pDeg;
+                $x: math.sin($deg) * $r;
+                $z: math.cos($deg) * $r;
+                transform: translate3d(#{$x}, 0, #{$z}) rotateY(180deg + $deg);
+            }
+        }
+    }
+}

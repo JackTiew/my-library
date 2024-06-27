@@ -5,6 +5,7 @@ import AutoFollowImageBorder from "./views/AutoFollow-ImageBorder/AutoFollow-Ima
 import BlackWhiteBallLoading from "./views/BlackWhite-Ball-Loading/BlackWhite-Ball-Loading";
 import BorderHighlight from "./views/Border-Highlight/Border-Highlist";
 import BrokenEffect from "./views/Broken-Effect/Broken-Effect";
+import BubbleAnimation from "./views/Bubble-Animation/Bubble-Animation";
 import CSSReflection from "./views/CSS-Reflection/CSS-Reflection";
 import CSSTextOverflow from "./views/CSS-Text-Overflow/CSS-Text-Overflow";
 import CardFlip from "./views/Card-Flip/Card-Flip";
@@ -30,6 +31,7 @@ import MovingBall from "./views/Moving-Ball/Moving-Ball";
 import NumberDelimeter from "./views/Number-Delimeter/Number-Delimeter";
 import Parabola from "./views/Parabola/Parabola";
 import PermissionDevelopment from "./views/Permission-Development/Permission-Development";
+import PhotoWall from "./views/Photo-Wall/Photo-Wall";
 import PlaneCursor from "./views/Plane-Cursor/Plane-Cursor";
 import RainCode from "./views/Rain-Code/Rain-Code";
 import RandomCanvasTree from "./views/Random-Canvas-Tree/Random-Canvas-Tree";
@@ -82,6 +84,8 @@ const Routes = [
   { url: '/border-highlight', element: BorderHighlight, name: 'Border Highlight Effect'},
   { url: '/auto-follow-image-border', element: AutoFollowImageBorder, name: 'Auto Follow Image Border'},
   { url: '/infinite-scroll', element: InfiniteScroll, name: 'Infinite Scroll'},
+  { url: '/photo-wall', element: PhotoWall, name: 'Photo Wall'},
+  { url: '/bubble-animation', element: BubbleAnimation, name: 'Bubble Animation'},
 ]
 
 export default Routes;

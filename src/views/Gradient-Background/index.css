@@ -57,7 +57,7 @@
   z-index: -2;
   left: 50%;
   top: 50%;
-  animation: gradient-background-rotation 1s linear infinite;
+  animation: rotation 1s linear infinite;
   transform-origin: left top;
 }
 
@@ -74,7 +74,7 @@
   z-index: -1;
 }
 
-@keyframes gradient-background-rotation {
+@keyframes rotation {
   to {
     transform: rotate(360deg);
   }

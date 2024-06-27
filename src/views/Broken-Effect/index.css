@@ -1,0 +1,5 @@
+.broken-effect-image {
+  width: 450px;
+  aspect-ratio: 9/16;
+  filter: url(#noise);
+}
