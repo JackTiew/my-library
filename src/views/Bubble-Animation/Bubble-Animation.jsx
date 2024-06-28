@@ -3,6 +3,7 @@ import './index.scss';
 
 const BubbleAnimation = () => {
 
+    let intervalId;
     useEffect(() => {
         const createBubbles = () => {
             const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
@@ -30,7 +31,9 @@ const BubbleAnimation = () => {
         };
 
         createBubbles();
-        setInterval(createBubbles, 500);
+        intervalId = setInterval(createBubbles, 500);
+
+        return () => clearInterval(intervalId);
     }, []);
 
     return (

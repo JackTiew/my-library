@@ -18,12 +18,13 @@ const InfiniteScroll = () => {
         window.addEventListener('animationend', handleTransitionEnd);
 
         return () => {
-            window.removeEventListener('wheel', e => handleWheel);
-            window.removeEventListener('animationend', e => handleTransitionEnd);
+            window.removeEventListener('wheel', handleWheel);
+            window.removeEventListener('animationend', handleTransitionEnd);
         }
     }, []);
 
     const handleWheel = (event) => {
+        console.log('test');
         if (!event.deltaY) return;
         if (event.deltaY > 0) {
             document.querySelector('.infiniteScroll-container').className = 'infiniteScroll-container infiniteScroll-scrollDown';

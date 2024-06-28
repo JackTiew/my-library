@@ -3,6 +3,7 @@ import AnimationPlayPause from "./views/Animation-PlayPause/Animation-PlayPause"
 import AspectRatio from "./views/Aspect-Ratio/Aspect-Ratio";
 import AutoFollowImageBorder from "./views/AutoFollow-ImageBorder/AutoFollow-ImageBorder";
 import BlackWhiteBallLoading from "./views/BlackWhite-Ball-Loading/BlackWhite-Ball-Loading";
+import BlendMode from "./views/Blend-Mode/Blend-Mode";
 import BorderHighlight from "./views/Border-Highlight/Border-Highlist";
 import BrokenEffect from "./views/Broken-Effect/Broken-Effect";
 import BubbleAnimation from "./views/Bubble-Animation/Bubble-Animation";
@@ -41,6 +42,7 @@ import RotateSlideShow from "./views/Rotate-SlideShow/Rotate-SlideShow";
 import RoundImageWithText from "./views/Round-Image-With-Text/Round-Image-With-Text";
 import SASSColorButton from "./views/SASS-Color-Button/SASS-Color-Button";
 import StrokeAnimation from "./views/Stroke-Animation/Stroke-Animation";
+import VideoFrame from "./views/Video-Frame/Video-Frame";
 
 const Routes = [
   { url: '/redux-sample', element: ReduxSample, name: 'Redux'},
@@ -86,6 +88,8 @@ const Routes = [
   { url: '/infinite-scroll', element: InfiniteScroll, name: 'Infinite Scroll'},
   { url: '/photo-wall', element: PhotoWall, name: 'Photo Wall'},
   { url: '/bubble-animation', element: BubbleAnimation, name: 'Bubble Animation'},
+  { url: '/blend-mode', element: BlendMode, name: 'Blend Mode'},
+  { url: '/video-frame', element: VideoFrame, name: 'Video Frame'},
 ]
 
 export default Routes;

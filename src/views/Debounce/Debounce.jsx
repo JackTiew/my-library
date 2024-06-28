@@ -24,7 +24,10 @@ const Debounce = () => {
 
     return (
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <h1>{isComplete.toString()}</h1>
+            <div style={{ textAlign: 'center' }}>
+                Resize to see changes
+                <h1>{isComplete.toString()}</h1>
+            </div>
         </div>
     )
 }

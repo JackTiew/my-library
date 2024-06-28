@@ -39,38 +39,40 @@ const MovingBall = () => {
     };
 
     const moveBall = (x, y) => {
-        const rect = ballRef.current.getBoundingClientRect();
-        const ballX = rect.x + rect.width / 2;
-        const ballY = rect.y + rect.height / 2;
-
-        ballRef.current.getAnimations().forEach(animation => {
-            animation.cancel();
-        });
-
-        const rad = Math.atan2(y - ballY, x - ballX);
-        const deg = (rad * 180 ) / Math.PI;
-        ballRef.current.animate(
-            [
+        if (ballRef && ballRef.current) {
+            const rect = ballRef.current.getBoundingClientRect();
+            const ballX = rect.x + rect.width / 2;
+            const ballY = rect.y + rect.height / 2;
+    
+            ballRef.current.getAnimations().forEach(animation => {
+                animation.cancel();
+            });
+    
+            const rad = Math.atan2(y - ballY, x - ballX);
+            const deg = (rad * 180 ) / Math.PI;
+            ballRef.current.animate(
+                [
+                    {
+                        transform: `translate(${ballX}px, ${ballY}px) rotate(${deg}deg)`,
+                    },
+                    {
+                        transform: `translate(${ballX}px, ${ballY}px) rotate(${deg}deg) scaleX(1.5)`,
+                        offset: 0.6,
+                    },
+                    {
+                        transform: `translate(${x}px, ${y}px) rotate(${deg}deg) scaleX(1.5)`,
+                        offset: 0.8,
+                    },
+                    {
+                        transform: `translate(${x}px, ${y}px) rotate(${deg}deg)`,
+                    }
+                ],
                 {
-                    transform: `translate(${ballX}px, ${ballY}px) rotate(${deg}deg)`,
-                },
-                {
-                    transform: `translate(${ballX}px, ${ballY}px) rotate(${deg}deg) scaleX(1.5)`,
-                    offset: 0.6,
-                },
-                {
-                    transform: `translate(${x}px, ${y}px) rotate(${deg}deg) scaleX(1.5)`,
-                    offset: 0.8,
-                },
-                {
-                    transform: `translate(${x}px, ${y}px) rotate(${deg}deg)`,
+                    duration: 1000,
+                    fill: 'forwards',
                 }
-            ],
-            {
-                duration: 1000,
-                fill: 'forwards',
-            }
-        );
+            );
+        }
     };
 
     return (

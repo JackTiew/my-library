@@ -3,13 +3,13 @@
     height: 50px;
     border-radius: 50%;
     background: #FC5E56;
-    animation: moving 2s infinite steps(3, jump-none);
+    animation: frame-animation-moving 2s infinite steps(3, jump-none);
     // animation: moving 2s infinite steps(3, jump-start);
     // animation: moving 2s infinite steps(3, jump-end);
     // animation: moving 2s infinite steps(3, jump-both);
 }
 
-@keyframes moving {
+@keyframes frame-animation-moving {
     to {
         transform: translateX(calc(100dvw - 100%));
     }
@@ -19,10 +19,10 @@
     width: 150px;
     height: 150px;
     background: url('./horse.png') no-repeat;
-    animation: run 1s steps(12) infinite;
+    animation: frame-animation-run 1s steps(12) infinite;
 }
 
-@keyframes run {
+@keyframes frame-animation-run {
     0% {
         background-position-x: -2400px;
     }
