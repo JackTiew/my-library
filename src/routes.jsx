@@ -24,6 +24,7 @@ import GSAP from "./views/GSAP/GSAP";
 import GradientBackground from "./views/Gradient-Background/Gradient-Background";
 import HighlightSearch from "./views/Highlight-Search/Highlight-Search";
 import ImageBorder from "./views/Image-Border/Image-Border";
+import ImagePopOnMouseEnter from "./views/Image-Pop-OnMouseEnter/Image-Pop-OnMouseEnter";
 import InfiniteScroll from "./views/Infinite-Scroll/Infinite-Scroll";
 import ItalicButton from "./views/Italic-Button/Italic-Button";
 import JSCSSVariable from "./views/JS-CSS-Variable/JS-CSS-Variable";
@@ -42,6 +43,7 @@ import RotateSlideShow from "./views/Rotate-SlideShow/Rotate-SlideShow";
 import RoundImageWithText from "./views/Round-Image-With-Text/Round-Image-With-Text";
 import SASSColorButton from "./views/SASS-Color-Button/SASS-Color-Button";
 import StrokeAnimation from "./views/Stroke-Animation/Stroke-Animation";
+import SudokuImage from "./views/Sudoku-Image/Sudoku-Image";
 import VideoFrame from "./views/Video-Frame/Video-Frame";
 
 const Routes = [
@@ -90,6 +92,8 @@ const Routes = [
   { url: '/bubble-animation', element: BubbleAnimation, name: 'Bubble Animation'},
   { url: '/blend-mode', element: BlendMode, name: 'Blend Mode'},
   { url: '/video-frame', element: VideoFrame, name: 'Video Frame'},
+  { url: '/sudoku-image', element: SudokuImage, name: 'Sudoku Image'},
+  // { url: '/image-pop-on-mouse-enter', element: ImagePopOnMouseEnter, name: 'Image Pop On Mouse Enter'},
 ]
 
 export default Routes;

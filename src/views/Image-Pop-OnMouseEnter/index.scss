@@ -1,0 +1,32 @@
+.mouseenter-image-container {
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    background-image: url('./sample.jpg');
+}
+
+.mouseenter-image-top {
+    background-image: url('./sample.jpg');
+    width: 0;
+    animation: mouseenter-image-showTopBottom 0.2s linear forwards;
+}
+
+.mouseenter-image-bottom {
+    background-image: url('./sample.jpg');
+    width: 0;
+    animation: mouseenter-image-showTopBottom 0.2s linear forwards;
+}
+
+.mouseenter-image-left {
+    background-image: url('./sample.jpg');
+}
+
+.mouseenter-image-right {
+    background-image: url('./sample.jpg');
+}
+
+@keyframes mouseenter-image-showTopBottom {
+    to {
+        height: 100dvh;
+    }
+}
