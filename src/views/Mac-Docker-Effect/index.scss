@@ -1,0 +1,36 @@
+.mac-docker-container {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 40%);
+    padding: 20px;
+    border-radius: 15px;
+    align-items: end;
+    height: 50px;
+}
+
+.mac-docker-item {
+    border-radius: 5px;
+    width: calc(var(--i, 1) * 50px);
+    height: calc(var(--i, 1) * 50px);
+    margin-bottom: calc(var(--i, 1) * 15px - 15px);
+    border: 1px solid #CCC;
+    
+}
+
+.mac-docker-item:nth-child(3n + 1) {
+    background-color: red;
+}
+
+.mac-docker-item:nth-child(3n + 2) {
+    background-color: green;
+}
+
+.mac-docker-item:nth-child(3n) {
+    background-color: yellow;
+}
+
+.mac-docker-gap {
+    // margin: 0 10px;
+    height: 30px;
+    width: calc(var(--i, 1) * 10px);
+}

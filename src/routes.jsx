@@ -29,6 +29,7 @@ import InfiniteScroll from "./views/Infinite-Scroll/Infinite-Scroll";
 import ItalicButton from "./views/Italic-Button/Italic-Button";
 import JSCSSVariable from "./views/JS-CSS-Variable/JS-CSS-Variable";
 import LazyLoadingImage from "./views/Lazy-Loading-Image/Lazy-Loading-Image";
+import MacDocker from "./views/Mac-Docker-Effect/Mac-Docker";
 import MovingBall from "./views/Moving-Ball/Moving-Ball";
 import NumberDelimeter from "./views/Number-Delimeter/Number-Delimeter";
 import Parabola from "./views/Parabola/Parabola";
@@ -93,7 +94,8 @@ const Routes = [
   { url: '/blend-mode', element: BlendMode, name: 'Blend Mode'},
   { url: '/video-frame', element: VideoFrame, name: 'Video Frame'},
   { url: '/sudoku-image', element: SudokuImage, name: 'Sudoku Image'},
-  // { url: '/image-pop-on-mouse-enter', element: ImagePopOnMouseEnter, name: 'Image Pop On Mouse Enter'},
+  { url: '/image-pop-on-mouse-enter', element: ImagePopOnMouseEnter, name: 'Image Pop On Mouse Enter'},
+  { url: '/mac-docker', element: MacDocker, name: 'Mac Docker Effect'},
 ]
 
 export default Routes;
