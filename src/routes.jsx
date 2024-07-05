@@ -23,6 +23,7 @@ import FrameAnimation from "./views/Frame-Animation/Frame-Animation";
 import FullWidthHeightImage from "./views/Full-WidthHeight-Image/Full-WidthHeight-Image";
 import GSAP from "./views/GSAP/GSAP";
 import GradientBackground from "./views/Gradient-Background/Gradient-Background";
+import GradientText from "./views/Gradient-Text/Gradient-Text";
 import HighlightSearch from "./views/Highlight-Search/Highlight-Search";
 import ImageBorder from "./views/Image-Border/Image-Border";
 import ImagePopOnMouseEnter from "./views/Image-Pop-OnMouseEnter/Image-Pop-OnMouseEnter";
@@ -102,6 +103,7 @@ const Routes = [
   { url: '/typewritter', element: TypeWritter, name: 'TypeWritter'},
   { url: '/intersection-observer', element: IntersectionObservers, name: 'Intersection Observer'},
   { url: '/animated-grid', element: AnimatedGrid, name: 'Animated Grid'},
+  { url: '/gradient-text', element: GradientText, name: 'Gradient Text'},
 ]
 
 export default Routes;

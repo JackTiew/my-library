@@ -16,6 +16,10 @@ const IntersectionObservers = () => {
     useEffect(() => {
         const dom = document.querySelector('.observer-loading');
         ob.observe(dom);
+
+        return () => {
+            ob.unobserve(dom);
+        }
     }, []);
 
     return (
