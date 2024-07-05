@@ -1,0 +1,23 @@
+.sudoku-image-container {
+  display: grid;
+  width: 300px;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+.sudoku-image-item {
+  width: 100px;
+  height: 100px;
+  box-shadow: inset 0 0 0 1px #FFFFFF;
+  transition: 0.5s;
+  background-size: 300px 300px;
+  background-image: url(./sample.jpg);
+  background-position: var(--bgX, 9) var(--bgY, 0);
+  transform: translate(var(--disX, 0), var(--disY, 0));
+}
+
+.sudoku-image-container:hover .sudoku-image-item {
+  box-shadow: inset 0 0 0 0 #FFFFFF;
+  --disX: 0!important;
+  --disY: 0!important;
+}

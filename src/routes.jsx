@@ -1,3 +1,4 @@
+import AnimatedGrid from "./views/Animated-Grid/Animated-Grid";
 import AnimationDelay from "./views/Animation-Delay/Animation-Delay";
 import AnimationPlayPause from "./views/Animation-PlayPause/Animation-PlayPause";
 import AspectRatio from "./views/Aspect-Ratio/Aspect-Ratio";
@@ -100,6 +101,7 @@ const Routes = [
   { url: '/mac-docker', element: MacDocker, name: 'Mac Docker Effect'},
   { url: '/typewritter', element: TypeWritter, name: 'TypeWritter'},
   { url: '/intersection-observer', element: IntersectionObservers, name: 'Intersection Observer'},
+  { url: '/animated-grid', element: AnimatedGrid, name: 'Animated Grid'},
 ]
 
 export default Routes;

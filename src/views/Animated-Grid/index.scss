@@ -1,0 +1,43 @@
+$areaName: a, b, c, d, e, f, g, h, i, j, k, l, 🌟;
+.animated-grid-container {
+    height: 85vh;
+    display: grid;
+    gap: 1rem;
+
+    grid-template-areas:
+    'a b c d'
+    'l 🌟 🌟 e'
+    'k 🌟 🌟 f'
+    'j i h g';
+
+    grid-template-rows: repeat(4, 25%);
+    grid-template-columns: 240px auto auto 240px;
+    --delay: 100ms;
+
+    .animated-grid-card {
+        background-color: rgb(36, 243, 147);
+        animation: animated-grid-show 700ms ease-out;
+        animation-fill-mode: backwards;
+    }
+
+    @keyframes animated-grid-show {
+        from {
+            opacity: 0;
+            transform: scale(0.3);
+            filter: hue-rotate(180deg);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+            filter: hue-rotate(0deg);
+        }
+    }
+
+    $n: 13;
+    @for $i from 1 through $n {
+        .animated-grid-card:nth-child(#{$i}) {
+            grid-area: nth($areaName, $i);;
+            animation-delay: calc($i * var(--delay));
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.blendMode-mix {
+  width: 400px;
+  height: 350px;
+  background: url(./dance2.gif) yellow center;
+  background-blend-mode: lighten;
+  position: relative;
+  margin: 0 auto;
+}
+
+.blendMode-mix::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin-left: 10px;
+  background: url(./dance2.gif) red center;
+  background-blend-mode: lighten;
+  mix-blend-mode: darken;
+  animation: blendMode-shaken 30ms infinite;
+}
+
+@keyframes blendMode-shaken {
+  to {
+    transform: translateX(10px);
+  }
+}
+.blendMode-multiply {
+  width: 250px;
+  height: 260px;
+  left: calc(50% - 125px);
+  background: url(./dance.gif) center/cover;
+  background-blend-mode: lighten;
+  mix-blend-mode: multiply;
+  position: absolute;
+  filter: contrast(3);
+}
+
+.blendMode-text {
+  width: 250px;
+  margin: 0 auto;
+  text-align: justify;
+  position: relative;
+  background: url(./dance.gif) center/cover;
+  mix-blend-mode: hard-light;
+  filter: grayscale(1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
