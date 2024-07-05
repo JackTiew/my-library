@@ -26,6 +26,7 @@ import HighlightSearch from "./views/Highlight-Search/Highlight-Search";
 import ImageBorder from "./views/Image-Border/Image-Border";
 import ImagePopOnMouseEnter from "./views/Image-Pop-OnMouseEnter/Image-Pop-OnMouseEnter";
 import InfiniteScroll from "./views/Infinite-Scroll/Infinite-Scroll";
+import IntersectionObservers from "./views/Intersection-Observer/Intersection-Observer";
 import ItalicButton from "./views/Italic-Button/Italic-Button";
 import JSCSSVariable from "./views/JS-CSS-Variable/JS-CSS-Variable";
 import LazyLoadingImage from "./views/Lazy-Loading-Image/Lazy-Loading-Image";
@@ -45,6 +46,7 @@ import RoundImageWithText from "./views/Round-Image-With-Text/Round-Image-With-T
 import SASSColorButton from "./views/SASS-Color-Button/SASS-Color-Button";
 import StrokeAnimation from "./views/Stroke-Animation/Stroke-Animation";
 import SudokuImage from "./views/Sudoku-Image/Sudoku-Image";
+import TypeWritter from "./views/TypeWritter/TypeWritter";
 import VideoFrame from "./views/Video-Frame/Video-Frame";
 
 const Routes = [
@@ -94,8 +96,10 @@ const Routes = [
   { url: '/blend-mode', element: BlendMode, name: 'Blend Mode'},
   { url: '/video-frame', element: VideoFrame, name: 'Video Frame'},
   { url: '/sudoku-image', element: SudokuImage, name: 'Sudoku Image'},
-  { url: '/image-pop-on-mouse-enter', element: ImagePopOnMouseEnter, name: 'Image Pop On Mouse Enter'},
+  // { url: '/image-pop-on-mouse-enter', element: ImagePopOnMouseEnter, name: 'Image Pop On Mouse Enter'},
   { url: '/mac-docker', element: MacDocker, name: 'Mac Docker Effect'},
+  { url: '/typewritter', element: TypeWritter, name: 'TypeWritter'},
+  { url: '/intersection-observer', element: IntersectionObservers, name: 'Intersection Observer'},
 ]
 
 export default Routes;

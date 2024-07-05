@@ -1,0 +1,30 @@
+.typewritter-container {
+    position: relative;
+    width: 80dvw;
+    text-align: center;
+    line-height: 2;
+    font-size: 40px;
+}
+
+.typewritter-eraser {
+    position: absolute;
+    inset: 0;
+}
+
+@property --p {
+    syntax: '<percentage>';
+    initial-value: 0%;
+    inherits: false;
+}
+
+.typewritter-eraser-text {
+    background: linear-gradient(to right, transparent var(--p), #1E222E calc(var(--p) + 30px));
+    color: transparent;
+    animation: typewritter-erase 5s linear forwards;
+}
+
+@keyframes typewritter-erase {
+    to {
+        --p: 100%;
+    }
+}
