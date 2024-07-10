@@ -47,3 +47,23 @@
     -webkit-background-clip: text;
     color: transparent;
 }
+
+.blendMode-difference-container {
+    font-size: 24px;
+    height: 100px;
+    margin-bottom: 50px;
+    background: linear-gradient(to right, #FFFFFF 0%, #FFFFFF 50%, #000000 50%, #000000 100%);
+    width: 90dvw;
+    overflow: auto;
+}
+
+.blendMode-wide-container {
+    width: 100dvw;
+    height: 100%;
+    // overflow: hidden;
+}
+
+.blendMode-difference-text {
+    text-align: center;
+    mix-blend-mode: difference;
+}

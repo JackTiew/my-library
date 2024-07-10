@@ -27,7 +27,6 @@ import GradientText from "./views/Gradient-Text/Gradient-Text";
 import HighlightSearch from "./views/Highlight-Search/Highlight-Search";
 import ImageBorder from "./views/Image-Border/Image-Border";
 import ImagePopOnMouseEnter from "./views/Image-Pop-OnMouseEnter/Image-Pop-OnMouseEnter";
-import InfiniteScroll from "./views/Infinite-Scroll/Infinite-Scroll";
 import IntersectionObservers from "./views/Intersection-Observer/Intersection-Observer";
 import ItalicButton from "./views/Italic-Button/Italic-Button";
 import JSCSSVariable from "./views/JS-CSS-Variable/JS-CSS-Variable";
@@ -46,6 +45,8 @@ import ReduxSample from "./views/Redux/ReduxSample";
 import RotateSlideShow from "./views/Rotate-SlideShow/Rotate-SlideShow";
 import RoundImageWithText from "./views/Round-Image-With-Text/Round-Image-With-Text";
 import SASSColorButton from "./views/SASS-Color-Button/SASS-Color-Button";
+import InfiniteScroll from "./views/Scroll/Infinite-Scroll/Infinite-Scroll";
+import SmoothScroll from "./views/Scroll/Smooth-Scroll/Smooth-Scroll";
 import StrokeAnimation from "./views/Stroke-Animation/Stroke-Animation";
 import SudokuImage from "./views/Sudoku-Image/Sudoku-Image";
 import TypeWritter from "./views/TypeWritter/TypeWritter";
@@ -104,6 +105,7 @@ const Routes = [
   { url: '/intersection-observer', element: IntersectionObservers, name: 'Intersection Observer'},
   { url: '/animated-grid', element: AnimatedGrid, name: 'Animated Grid'},
   { url: '/gradient-text', element: GradientText, name: 'Gradient Text'},
+  { url: '/smooth-scroll', element: SmoothScroll, name: 'Smooth Scroll'},
 ]
 
 export default Routes;

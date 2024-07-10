@@ -5,6 +5,13 @@ const BlendMode = () => {
     return (
         <div className='center'>
             <div>
+                <div className='blendMode-difference-container'>
+                    <div className="blendMode-wide-container">
+                        <div className='blendMode-difference-text'>
+                            I am Groot!
+                        </div>
+                    </div>
+                </div>
                 <div className='blendMode-mix'></div>
                 <div style={{ position: 'relative' }}>
                     <div className='blendMode-multiply'></div>

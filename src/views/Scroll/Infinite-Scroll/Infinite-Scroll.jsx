@@ -24,7 +24,6 @@ const InfiniteScroll = () => {
     }, []);
 
     const handleWheel = (event) => {
-        console.log('test');
         if (!event.deltaY) return;
         if (event.deltaY > 0) {
             document.querySelector('.infiniteScroll-container').className = 'infiniteScroll-container infiniteScroll-scrollDown';
