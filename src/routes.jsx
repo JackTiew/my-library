@@ -1,4 +1,5 @@
 import AnimatedGrid from "./views/Animated-Grid/Animated-Grid";
+import AnimatedHeight from "./views/Animated-Height/Animated-Height";
 import AnimationDelay from "./views/Animation-Delay/Animation-Delay";
 import AnimationPlayPause from "./views/Animation-PlayPause/Animation-PlayPause";
 import AspectRatio from "./views/Aspect-Ratio/Aspect-Ratio";
@@ -25,6 +26,7 @@ import GSAP from "./views/GSAP/GSAP";
 import GradientBackground from "./views/Gradient-Background/Gradient-Background";
 import GradientText from "./views/Gradient-Text/Gradient-Text";
 import HighlightSearch from "./views/Highlight-Search/Highlight-Search";
+import HoneyCombLayout from "./views/HoneyComb-Layout/HoneyComb-Layout";
 import ImageBorder from "./views/Image-Border/Image-Border";
 import ImagePopOnMouseEnter from "./views/Image-Pop-OnMouseEnter/Image-Pop-OnMouseEnter";
 import IntersectionObservers from "./views/Intersection-Observer/Intersection-Observer";
@@ -47,10 +49,12 @@ import RoundImageWithText from "./views/Round-Image-With-Text/Round-Image-With-T
 import SASSColorButton from "./views/SASS-Color-Button/SASS-Color-Button";
 import InfiniteScroll from "./views/Scroll/Infinite-Scroll/Infinite-Scroll";
 import SmoothScroll from "./views/Scroll/Smooth-Scroll/Smooth-Scroll";
+import SplitFile from "./views/Split-File/Split-File";
 import StrokeAnimation from "./views/Stroke-Animation/Stroke-Animation";
 import SudokuImage from "./views/Sudoku-Image/Sudoku-Image";
 import TypeWritter from "./views/TypeWritter/TypeWritter";
 import VideoFrame from "./views/Video-Frame/Video-Frame";
+import VortexArray from "./views/Vortex-Array/Vortex-Array";
 
 const Routes = [
   { url: '/redux-sample', element: ReduxSample, name: 'Redux'},
@@ -106,6 +110,10 @@ const Routes = [
   { url: '/animated-grid', element: AnimatedGrid, name: 'Animated Grid'},
   { url: '/gradient-text', element: GradientText, name: 'Gradient Text'},
   { url: '/smooth-scroll', element: SmoothScroll, name: 'Smooth Scroll'},
+  { url: '/split-file', element: SplitFile, name: 'Split File'},
+  { url: '/animated-height', element: AnimatedHeight, name: 'Animated Height'},
+  { url: '/vortex-array', element: VortexArray, name: 'Vortex Array'},
+  { url: '/honeycomb-layout', element: HoneyCombLayout, name: 'HoneyComb Layout'},
 ]
 
 export default Routes;
